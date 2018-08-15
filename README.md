@@ -1,9 +1,9 @@
 # SKKU_CS_Notice_bot
 SKKU Computer Science Board Scrapper using Telegram Bot. @SKKU_CS_Notice_bot
 
-#How to use
+# How to use
 1. 먼저 관련된 dependency를 세팅한다.
-1) 기존에 있는 파일 지우기.
+
 sudo apt-get remove google-chrome-stable
 rm ~/selenium-server-standalone-*.jar
 rm ~/chromedriver_linux64.zip
@@ -41,6 +41,9 @@ xz-utils tk-dev
 cat /var/log/syslog | grep CRON
 cat /var/mail/luv_gwangyoung 
 
-2. 크롬 드라이버가 /usr/local/bin/ 
+2. 크롬 드라이버가 /usr/local/bin/ 아래 폴더에 잘 저장되어 있는지 확인한다.
+3. crontab -e하면 열리는 vim 창에서 아래와 같이 저장한다.
+0 * * * * /usr/bin/python3 /home/luv_gwangyoung/SKKU_CS_Notice_bot.py
+
 
 
