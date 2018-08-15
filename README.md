@@ -42,8 +42,11 @@ cat /var/log/syslog | grep CRON
 cat /var/mail/luv_gwangyoung 
 
 2. 크롬 드라이버가 /usr/local/bin/ 아래 폴더에 잘 저장되어 있는지 확인한다.
-3. crontab -e하면 열리는 vim 창에서 아래와 같이 저장한다.
+
+3. crontab -e하면 열리는 vim 창에서 아래와 같이 저장한다.(매 시 정각마다 실행됨)
 0 * * * * /usr/bin/python3 /home/luv_gwangyoung/SKKU_CS_Notice_bot.py
+
+
 
 
 
